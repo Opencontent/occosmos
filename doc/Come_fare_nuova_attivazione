@@ -1,0 +1,20 @@
+Per attivare un nuovo comune:
+
+
+1) creare extension/occosmos/settings/siteaccess/<siteacesses_comune>/cosmos.ini
+con Geoname (recuperabile da www.geonames.org)
+
+[Settings]
+Ambiti=Gli ambiti gestiti dal sistema sono: Comuni, Meteo, Trasporto extraurbano e Farmacie.
+GeonameId=GEONAMEID
+Url=http://www.cosmosinrete.it/cosmos_ws/COSMOS_WS.asmx/Cosmos_SMS_in_Geo_Place
+
+2) Attivare l'estesnione per il comune (se non è già attiva)
+
+3) Svuotare cache
+
+4) Abilitare l'utente anonimo al modulo cosmos/ask
+
+5) Testare: se il comune è già presente in Cosmos OK, sennò contattare Luca Scaramella di Expert System e chiedere di abilitare il geonameID di cui sopra
+
+4) Inserire il blocco nella frontpage preferita (di solito la home)
